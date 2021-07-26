@@ -18,7 +18,6 @@
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '$a src-git liuran001_packages https://github.com/liuran001/openwrt-packages' feeds.conf.default
-sed -i '$a src-git luci https://github.com/rosywrt/luci.git' feeds.conf.default
 
 # Define My Package
 #git clone https://github.com/vernesong/OpenClash package/molun/luci-app-openclash
