@@ -174,11 +174,12 @@ jobs:
         retain_days: 1
         keep_minimum_runs: 3
 
-    - name: Remove old Releases
-      uses: dev-drprasad/delete-older-releases@v0.1.0
-      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
-      with:
-        keep_latest: 3
-        delete_tags: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# 我想不清原作者为什么要删除过时的release，只好先注释掉了
+#     - name: Remove old Releases
+#       uses: dev-drprasad/delete-older-releases@v0.1.0
+#       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+#       with:
+#         keep_latest: 3
+#         delete_tags: true
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
