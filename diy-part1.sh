@@ -25,3 +25,4 @@ sed -i '$a src-git liuran001_packages https://github.com/liuran001/openwrt-packa
 #git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/molun/luci-app-jd-dailybonus
 #git clone https://github.com/sirpdboy/luci-theme-opentopd package/molun/luci-theme-opentopd
 #git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/molun/luci-theme-infinityfreedom
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
